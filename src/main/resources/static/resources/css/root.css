@@ -1,0 +1,21 @@
+:root{
+	--page-bg-colour: #c8c8c8;
+}
+
+body{
+	background-color: var(--pge-bg-color);
+}
+
+#logo img{
+	width: 5em;
+	float: left;
+}
+
+#pageTitle{
+	float: left;
+	font-size: 120%;
+}
+
+#pageContent{
+	clear: both;
+}
