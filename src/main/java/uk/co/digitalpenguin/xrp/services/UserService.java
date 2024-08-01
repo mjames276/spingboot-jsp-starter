@@ -42,10 +42,6 @@ public class UserService implements UserDetailsService
 		User user = userRepository.findByUsername(username);
 		if (user == null)
 			throw new UsernameNotFoundException("User Not found: " +username);
-	  
-	    BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-	  
-	    jdbc.update("update users set password=? where email=?", encoder.encode("tomato"), username);
 		  
 		return user;
 	}
